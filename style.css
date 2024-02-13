@@ -1,0 +1,34 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+
+.card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#heart {
+    font-size: 48px;
+    cursor: pointer;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
